@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likhit portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/417b804913.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            
+            <h2>Hi,<br> I'm <span>Likhit Dinesh Kunder</span></h2>
+            <span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Engineer  ',
+						'CAD Designer  ',
+						'Graphic Designer  ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h3>Mechanical Engineer</h3>
+        </div>
+    </div>
+
+</div>
+<!----------------------about--------------------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="aboutmepic.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Driven and proactive, I am an individual with a passion for personal and professional growth. With a strong work ethic and a growth mindset, I thrive on challenges and continually strive for excellence.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('resume')">Resume</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li>Supervisor<br><span>Project Management, Safety Compliance, Client Relationship Management</span></li><br>
+                        <li>CAD Design<br><span>Globally Certified in Autodesk inventor & AutoCAD</span></li><br>
+                        <li>Web Development<br><span>HTML, CSS, Java Script</span></li><br>
+                        <li>Microsoft Excel<br><span>Advance Formulas and Functions</span></li>
+                        
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li>2023-2024<br><span>Assistant-Engineer at Plant-Tech Industrial Services Pvt.Ltd.</span></li><br>
+                        <li>2022-present<br><span>Freelancing 3D design and 2D to 3D Conversion</span></li><br>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li>Bachelor of Technology<br><span>2019-2023, B.Tech in Mechanical Engineering, <br>Srinivas University Institute of Engineering and Technology</span></li><br>
+                        <li>Pre-University<br><span>2017-2019, Science, <br> poorna prajna Pre-University College</span></li><br>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="resume">
+                    <p>Seasoned Mechanical Engineer with an year of experience, have completed two projects on-site at indian oil corporation limited WRPL Gujrat and Cairn India Vedanta, Rajasthan in the field of oil and gas industry,sludge processing,tank cleaning.</p><br>
+                    <ul>
+                        <li>Profile:<span> Engineer</span></li>
+                        <li>D.o.b:<span> 05/10/2001</span></li>
+                        <li>Age:<span> 22 Years</span></li>
+                        <li>Height:<span> 5'11 Feet</span></li>
+                        <li>Langauges:<span> English,Hindi,Kannada,Tamil</span></li>
+                        <li>Intrest:<span> Travelling, Designing, Reading Books</span></li>
+                        <a href="LikhitDineshKunder_Resume.pdf" download class="btn btn2">Download CV</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!------------------------services---------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-cube"></i>
+                <h2>CAD Design</h2>
+                <p>From initial sketches to 3D modeling and rendering, I bring your visions to life with stunning clarity and realism, enabling you to visualize and refine your designs before production.</p>
+                <a href="https://www.linkedin.com/in/likhitkunder005">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>From pixel-perfect typography to seamless animations, I obsess over every detail to ensure that your website not only looks exceptional but also functions flawlessly across all devices and browsers.</p>
+                <a href="https://www.linkedin.com/in/likhitkunder005">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-pen-to-square"></i>
+                <h2>Graphic Design</h2>
+                <p> Illustrations add personality and charm to any project. Whether you need custom illustrations, logo designs, Marketing material or Website Graphics, I bring your ideas to life with creativity and precision.</p>
+                <a href="https://www.linkedin.com/in/likhitkunder005">learn more</a>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!----------------------------portfolio------------------------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Portfolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="likhitcadwork.png">
+                <div class="layer">
+                    <h3>CAD Design</h3>
+                    <p>In this section, I showcase a selection of my finest CAD design projects, each meticulously crafted to fulfill unique design challenges and bring innovative ideas to life.</p>
+                    <a href="https://www.linkedin.com/in/likhitkunder005"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="webdesignwork.png">
+                <div class="layer">
+                    <h3>Web Development</h3>
+                    <p>project featured here represents a journey of creativity, problem-solving, and dedication to delivering exceptional digital experiences. </p>
+                    <a href="https://www.linkedin.com/in/likhitkunder005"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="graphicworklikhit.png">
+                <div class="layer">
+                    <h3>Graphic Design</h3>
+                    <p>Explore the diverse range of projects showcased here, each one a unique journey from concept to completion</p>
+                    <a href="https://www.linkedin.com/in/likhitkunder005"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://www.linkedin.com/in/likhitkunder005" class="btn">See More</a>
+    </div>
+</div>
+<!----------------------------contact------------------------------>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> likithkunder05@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i> +91 6363695049</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/likhitkunder005"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/likhit_d_kunder?igsh=MTh1ZDB1OGNtbWFreQ=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61558781663145"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://discord.com/invite/daQDbnjs"><i class="fa-brands fa-discord"></i></a>
+                </div>
+                <a href="LikhitDineshKunder_Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Likhit Dinesh Kunder</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+</body>
+
+
+</html>
